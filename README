@@ -1,0 +1,61 @@
+A simple python script to generate QR barcodes using use supplied input images, in my case, Puzzle Quest 2 gems.
+
+Requirements
+------------
+
+Requires Python with PIL installed.
+
+	Python: http://www.python.org/download/
+	PIL: http://www.pythonware.com/products/pil/
+
+Usage
+-----
+
+> python qrgen.py -i green.png -i blue.png -i purple.png -i brown.png -i red.png -o output.png -d "This is the data encoded in the image"
+
+	-i IMAGE, --image=IMAGE: Adds an image that will be randomly placed on the output image.  You can use any input image format that PIL supports.
+	-o IMAGE, --output=IMAGE: The image file to write the generated bar code into.
+	-d DATA, --data=DATA: The data to encode in the bar code
+	-s PERCENT, --scale=PERCENT: The script can optionally scale the resulting image.  Pass an integer value which the script treats as a percent.
+
+If you are using large input images then you can expect a very large output file.  To scale the image before saving it, use the --scale option, for example:
+
+> python qrgen.py -i green.png -i blue.png -i purple.png -i brown.png -i red.png -o output.png -d "This is the data encoded in the image" --scale=10
+
+The output image from the above command will be saved at 10% of the size it was generated at.
+
+Questions
+---------
+
+What is a QR bar code?
+
+	http://en.wikipedia.org/wiki/QR_Code
+
+What is Puzzle Quest 2?
+
+	http://store.steampowered.com/app/47540/
+
+Can I use any images?
+
+	You can certainly try! A good image is one that doesn't have too much
+	brightness in it and one that does not have too much transparency (as
+	the transparent parts will come through as white).
+
+Legal
+-----
+
+Puzzle Quest™ 2 and its associated characters and names are trademarks of Infinite Interactive Pty. Ltd.
+
+The following files are (c) 2011, Infinite Interactive Pty Ltd:
+
+	blue.png
+	brown.png
+	green.png
+	purple.png
+	red.png
+	skull.png
+	white.png
+	yellow.png
+
+All rights reserved.
+
