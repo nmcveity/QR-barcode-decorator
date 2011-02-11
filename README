@@ -7,6 +7,8 @@ Requires Python with PIL installed.
 
 	Python: http://www.python.org/download/
 	PIL: http://www.pythonware.com/products/pil/
+	
+	An active internet connection as the program uses Google Chart API
 
 Usage
 -----
@@ -44,7 +46,7 @@ Can I use any images?
 Legal
 -----
 
-Puzzle Quest™ 2 and its associated characters and names are trademarks of Infinite Interactive Pty. Ltd.
+Puzzle Quest(tm) 2 and its associated characters and names are trademarks of Infinite Interactive Pty. Ltd.
 
 The following files are (c) 2011, Infinite Interactive Pty Ltd:
 
